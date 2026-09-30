@@ -1,0 +1,20 @@
+请你当我的电脑小老师，帮我把 STM32 开发环境安装好。我的电脑是 Windows 10 或 Windows 11。
+
+请按下面的顺序做事，每一步都用非常简单的中文告诉我你现在做了什么：
+
+1. 打开这个项目，先阅读 QUICK-DEPLOY.md 和 scripts/install-stm32-tools.ps1。
+2. 检查我是否已经安装 VS Code 和 STM32CubeMX。
+3. 如果缺少 VS Code 或 STM32CubeMX，告诉我应该手动安装哪一个，不要替我下载来源不明的安装包。
+4. 运行 scripts/install-stm32-tools.ps1。这个脚本会使用 Windows 自带的 winget 安装 Arm GNU Toolchain、CMake、Ninja 和 OpenOCD。
+5. 如果脚本需要我手动允许某些操作，请明确告诉我应该点哪里。
+6. 安装 VS Code 扩展：C/C++、CMake、CMake Tools、Cortex-Debug、ARM Assembly。
+7. 运行 scripts/check-stm32-tools.ps1，确认 arm-none-eabi-gcc、cmake、ninja、openocd 都能正常运行。
+8. 最后用一句话告诉我：现在能不能开始新建 STM32 工程。
+
+不要让我自己复制很多命令。你能执行的步骤直接执行；必须由我点击的步骤再一步一步告诉我。
+
+如果我已经用 STM32CubeMX 生成了一个工程，请继续运行：
+
+    powershell -ExecutionPolicy Bypass -File .\scripts\prepare-stm32-project.ps1 -ProjectPath "我的工程目录"
+
+然后告诉我编译和调试时应该按哪个按钮。

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="960" viewBox="0 0 1500 960" role="img" aria-labelledby="title desc">
+  <title id="title">CubeMX 点击路线图</title>
+  <desc id="desc">从新建工程到生成代码的六个简单操作。</desc>
+  <rect width="1500" height="960" fill="#fffaf0"/>
+  <text x="66" y="68" fill="#111827" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="36" font-weight="800">CubeMX 新手点击路线</text>
+  <text x="68" y="108" fill="#64748b" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="20">照着 1 到 6 点击。看不懂英文时，先找图中高亮的关键词。</text>
+
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <g transform="translate(60 160)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#2563eb"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">1</text>
+      <text x="108" y="54" fill="#1e3a8a" font-size="25" font-weight="800">新建工程</text>
+      <text x="110" y="88" fill="#334155" font-size="18">点击 New Project</text>
+      <rect x="88" y="126" width="244" height="54" rx="9" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+      <text x="210" y="161" text-anchor="middle" fill="#1e3a8a" font-size="22" font-weight="800">New Project</text>
+      <text x="88" y="216" fill="#64748b" font-size="17">看到芯片搜索框就成功了。</text>
+    </g>
+    <g transform="translate(540 160)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#16a34a"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">2</text>
+      <text x="108" y="54" fill="#14532d" font-size="25" font-weight="800">选芯片</text>
+      <text x="110" y="88" fill="#334155" font-size="18">搜索框输入型号</text>
+      <rect x="88" y="126" width="244" height="54" rx="9" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+      <text x="210" y="161" text-anchor="middle" fill="#14532d" font-size="22" font-weight="800">STM32F103C8</text>
+      <text x="88" y="216" fill="#64748b" font-size="17">选中 STM32F103C8Tx，再开始。</text>
+    </g>
+    <g transform="translate(1020 160)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#7c3aed"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">3</text>
+      <text x="108" y="54" fill="#581c87" font-size="25" font-weight="800">打开调试口</text>
+      <text x="110" y="88" fill="#334155" font-size="18">按顺序展开</text>
+      <text x="88" y="132" fill="#334155" font-size="20">System Core</text>
+      <text x="108" y="168" fill="#334155" font-size="20">→ SYS</text>
+      <text x="128" y="204" fill="#334155" font-size="20">→ Debug</text>
+      <text x="128" y="238" fill="#7c3aed" font-size="19" font-weight="800">选择 Serial Wire</text>
+    </g>
+
+    <path d="M480 285h60M960 285h60" stroke="#94a3b8" stroke-width="6" marker-end="url(#kids-arrow2)"/>
+    <path d="M1230 410v70H270v70" fill="none" stroke="#94a3b8" stroke-width="6" marker-end="url(#kids-arrow2)"/>
+
+    <g transform="translate(60 550)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#ea580c"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">4</text>
+      <text x="108" y="54" fill="#7c2d12" font-size="25" font-weight="800">打开晶振</text>
+      <text x="110" y="88" fill="#334155" font-size="18">按顺序展开</text>
+      <text x="88" y="132" fill="#334155" font-size="20">System Core</text>
+      <text x="108" y="168" fill="#334155" font-size="20">→ RCC</text>
+      <text x="128" y="204" fill="#334155" font-size="20">→ HSE</text>
+      <text x="128" y="238" fill="#ea580c" font-size="19" font-weight="800">选择 Crystal/Ceramic</text>
+    </g>
+    <g transform="translate(540 550)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#dc2626"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">5</text>
+      <text x="108" y="54" fill="#7f1d1d" font-size="25" font-weight="800">点亮小灯</text>
+      <text x="110" y="88" fill="#334155" font-size="18">在芯片图上点 PC13</text>
+      <rect x="88" y="126" width="244" height="54" rx="9" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+      <text x="210" y="161" text-anchor="middle" fill="#7f1d1d" font-size="21" font-weight="800">PC13 → GPIO_Output</text>
+      <text x="88" y="216" fill="#64748b" font-size="17">User Label 写 USER_LED。</text>
+    </g>
+    <g transform="translate(1020 550)">
+      <rect width="420" height="250" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+      <circle cx="58" cy="54" r="30" fill="#0891b2"/><text x="58" y="64" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">6</text>
+      <text x="108" y="54" fill="#164e63" font-size="25" font-weight="800">生成代码</text>
+      <text x="110" y="88" fill="#334155" font-size="18">Project Manager 里选</text>
+      <rect x="88" y="126" width="244" height="54" rx="9" fill="#cffafe" stroke="#0891b2" stroke-width="3"/>
+      <text x="210" y="161" text-anchor="middle" fill="#164e63" font-size="22" font-weight="800">Toolchain: CMake</text>
+      <rect x="88" y="194" width="244" height="40" rx="9" fill="#0f766e"/>
+      <text x="210" y="221" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">GENERATE CODE</text>
+    </g>
+
+    <rect x="60" y="860" width="1380" height="62" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="3"/>
+    <text x="90" y="900" fill="#065f46" font-size="22" font-weight="700">完成后，工程文件夹里会出现 Core、Drivers、CMakeLists.txt 和 .ioc 文件。</text>
+  </g>
+  <defs>
+    <marker id="kids-arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L12 6L0 12z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820" role="img" aria-labelledby="title desc">
+  <title id="title">只在自己的代码区写代码</title>
+  <desc id="desc">用颜色说明 USER CODE BEGIN 和 END 之间的安全修改区域。</desc>
+  <rect width="1500" height="820" fill="#f8fafc"/>
+  <text x="66" y="68" fill="#111827" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="36" font-weight="800">只在这个绿色盒子里写代码</text>
+  <text x="68" y="108" fill="#64748b" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="20">CubeMX 重新生成代码时，绿色区域的文字会保留。</text>
+
+  <rect x="70" y="160" width="1360" height="530" rx="20" fill="#1f2430"/>
+  <text x="110" y="210" fill="#94a3b8" font-family="Consolas, monospace" font-size="19">Core/Src/main.c</text>
+  <g font-family="Consolas, monospace" font-size="19">
+    <text x="110" y="262" fill="#c586c0">int</text><text x="164" y="262" fill="#dcdcaa"> main</text><text x="228" y="262" fill="#d4d4d4">(</text><text x="246" y="262" fill="#c586c0">void</text><text x="302" y="262" fill="#d4d4d4">)</text>
+    <text x="110" y="300" fill="#d4d4d4">{</text>
+    <rect x="140" y="330" width="1180" height="118" rx="12" fill="#052e16" stroke="#22c55e" stroke-width="3"/>
+    <text x="170" y="370" fill="#86efac">/* USER CODE BEGIN 2 */</text>
+    <text x="170" y="408" fill="#ffffff">HAL_Init();</text>
+    <text x="170" y="438" fill="#86efac">/* USER CODE END 2 */</text>
+    <text x="140" y="500" fill="#d4d4d4">while (1)</text>
+    <text x="140" y="538" fill="#d4d4d4">{</text>
+    <rect x="170" y="560" width="1120" height="104" rx="12" fill="#052e16" stroke="#22c55e" stroke-width="3"/>
+    <text x="200" y="594" fill="#86efac">/* USER CODE BEGIN 3 */</text>
+    <text x="200" y="628" fill="#ffffff">HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);</text>
+    <text x="200" y="656" fill="#86efac">HAL_Delay(500);  /* USER CODE END 3 */</text>
+  </g>
+
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <rect x="70" y="724" width="660" height="64" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="3"/>
+    <text x="100" y="763" fill="#065f46" font-size="21" font-weight="700">绿色区域：可以写自己的代码</text>
+    <rect x="770" y="724" width="660" height="64" rx="14" fill="#fff7ed" stroke="#f97316" stroke-width="3"/>
+    <text x="800" y="763" fill="#9a3412" font-size="21" font-weight="700">其他区域：通常交给 CubeMX 维护</text>
+  </g>
+</svg>
