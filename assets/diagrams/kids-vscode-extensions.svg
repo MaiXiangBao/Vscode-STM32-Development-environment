@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860" role="img" aria-labelledby="title desc">
+  <title id="title">VS Code 必装插件</title>
+  <desc id="desc">C/C++、CMake、CMake Tools、Cortex-Debug 和 ARM Assembly 的作用。</desc>
+  <rect width="1500" height="860" fill="#eef2f7"/>
+  <text x="64" y="68" fill="#111827" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="36" font-weight="800">VS Code 还需要安装五个插件</text>
+  <text x="66" y="108" fill="#64748b" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="20">只安装 VS Code 本体还不够。插件负责代码提示、构建和调试。</text>
+
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <g transform="translate(64 160)">
+      <rect width="260" height="250" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+      <text x="28" y="48" fill="#1e3a8a" font-size="25" font-weight="800">C/C++</text>
+      <text x="28" y="82" fill="#475569" font-size="17">ms-vscode.cpptools</text>
+      <text x="28" y="132" fill="#334155" font-size="19">看懂 C 代码</text>
+      <text x="28" y="168" fill="#334155" font-size="19">跳转定义</text>
+      <text x="28" y="204" fill="#334155" font-size="19">查看变量和函数</text>
+      <text x="28" y="236" fill="#1d4ed8" font-size="18" font-weight="800">必装</text>
+    </g>
+    <g transform="translate(344 160)">
+      <rect width="260" height="250" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+      <text x="28" y="48" fill="#14532d" font-size="25" font-weight="800">CMake</text>
+      <text x="28" y="82" fill="#475569" font-size="17">twxs.cmake</text>
+      <text x="28" y="132" fill="#334155" font-size="19">识别 CMake 文件</text>
+      <text x="28" y="168" fill="#334155" font-size="19">显示颜色</text>
+      <text x="28" y="204" fill="#334155" font-size="19">减少看错命令</text>
+      <text x="28" y="236" fill="#15803d" font-size="18" font-weight="800">必装</text>
+    </g>
+    <g transform="translate(624 160)">
+      <rect width="260" height="250" rx="18" fill="#ffedd5" stroke="#ea580c" stroke-width="3"/>
+      <text x="28" y="48" fill="#7c2d12" font-size="25" font-weight="800">CMake Tools</text>
+      <text x="28" y="82" fill="#475569" font-size="17">ms-vscode.cmake-tools</text>
+      <text x="28" y="132" fill="#334155" font-size="19">选择 Debug</text>
+      <text x="28" y="168" fill="#334155" font-size="19">配置工程</text>
+      <text x="28" y="204" fill="#334155" font-size="19">一键构建</text>
+      <text x="28" y="236" fill="#c2410c" font-size="18" font-weight="800">必装</text>
+    </g>
+    <g transform="translate(904 160)">
+      <rect width="260" height="250" rx="18" fill="#f3e8ff" stroke="#9333ea" stroke-width="3"/>
+      <text x="28" y="48" fill="#581c87" font-size="25" font-weight="800">Cortex-Debug</text>
+      <text x="28" y="82" fill="#475569" font-size="17">marus25.cortex-debug</text>
+      <text x="28" y="132" fill="#334155" font-size="19">按 F5 调试</text>
+      <text x="28" y="168" fill="#334155" font-size="19">连接 OpenOCD</text>
+      <text x="28" y="204" fill="#334155" font-size="19">看断点和寄存器</text>
+      <text x="28" y="236" fill="#7e22ce" font-size="18" font-weight="800">必装</text>
+    </g>
+    <g transform="translate(1184 160)">
+      <rect width="252" height="250" rx="18" fill="#cffafe" stroke="#0891b2" stroke-width="3"/>
+      <text x="28" y="48" fill="#164e63" font-size="25" font-weight="800">ARM Assembly</text>
+      <text x="28" y="82" fill="#475569" font-size="17">dan-c-underwood.arm</text>
+      <text x="28" y="132" fill="#334155" font-size="19">让 .s 启动文件</text>
+      <text x="28" y="168" fill="#334155" font-size="19">有颜色和高亮</text>
+      <text x="28" y="204" fill="#334155" font-size="19">更容易看懂汇编</text>
+      <text x="28" y="236" fill="#0e7490" font-size="18" font-weight="800">建议安装</text>
+    </g>
+
+    <rect x="64" y="474" width="1372" height="150" rx="18" fill="#111827"/>
+    <text x="100" y="522" fill="#5eead4" font-size="25" font-weight="800">怎样安装</text>
+    <text x="100" y="566" fill="#e2e8f0" font-size="21">1. 在 VS Code 按 Ctrl+Shift+X 打开扩展面板。</text>
+    <text x="100" y="602" fill="#e2e8f0" font-size="21">2. 搜索上表中的 ID，点击 Install。Codex 也可以自动安装。</text>
+
+    <rect x="64" y="664" width="1372" height="136" rx="18" fill="#ecfdf5" stroke="#10b981" stroke-width="3"/>
+    <text x="100" y="710" fill="#065f46" font-size="24" font-weight="800">安装后检查</text>
+    <text x="100" y="750" fill="#334155" font-size="20">扩展面板中应该同时出现 C/C++、CMake、CMake Tools、Cortex-Debug 和 ARM Assembly。</text>
+    <text x="100" y="782" fill="#334155" font-size="20">如果缺少 CMake Tools，可能无法在底部选择 Debug；缺少 Cortex-Debug，就无法按 F5 调试。</text>
+  </g>
+</svg>

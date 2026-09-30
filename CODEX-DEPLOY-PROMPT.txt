@@ -7,7 +7,12 @@
 3. 如果缺少 VS Code 或 STM32CubeMX，告诉我应该手动安装哪一个，不要替我下载来源不明的安装包。
 4. 运行 scripts/install-stm32-tools.ps1。这个脚本会使用 Windows 自带的 winget 安装 Arm GNU Toolchain、CMake、Ninja 和 OpenOCD。
 5. 如果脚本需要我手动允许某些操作，请明确告诉我应该点哪里。
-6. 安装 VS Code 扩展：C/C++、CMake、CMake Tools、Cortex-Debug、ARM Assembly。
+6. 安装 VS Code 扩展：
+   - C/C++: ms-vscode.cpptools
+   - CMake: twxs.cmake
+   - CMake Tools: ms-vscode.cmake-tools
+   - Cortex-Debug: marus25.cortex-debug
+   - ARM Assembly: dan-c-underwood.arm
 7. 运行 scripts/check-stm32-tools.ps1，确认 arm-none-eabi-gcc、cmake、ninja、openocd 都能正常运行。
 8. 最后用一句话告诉我：现在能不能开始新建 STM32 工程。
 

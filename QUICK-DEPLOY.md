@@ -27,7 +27,7 @@ Codex 使用 Windows 自带的 `winget` 安装：
 | Ninja | `Ninja-build.Ninja` |
 | OpenOCD xPack | `xpack-dev-tools.openocd-xpack` |
 
-这不会把本机工具链打包上传，也不会让你到处找下载页面。
+这样不用到处找下载页面。
 
 ## 2. 最简单的使用方式
 
@@ -36,7 +36,7 @@ Codex 使用 Windows 自带的 `winget` 安装：
 仓库地址：
 
 ```text
-https://github.com/MaiXiangBao/VScode-STM32-
+https://github.com/MaiXiangBao/Vscode-STM32-Development-environment
 ```
 
 ### 第二步：复制这句话给 Codex
@@ -59,7 +59,40 @@ Codex 会：
 
 如果 Codex 需要你手动安装 STM32CubeMX，它会明确告诉你。
 
-## 3. 不想使用 Codex 时
+## 3. VS Code 需要安装的插件
+
+只安装 VS Code 本体还不够。必须安装：
+
+| 插件 | 扩展 ID |
+| --- | --- |
+| C/C++ | `ms-vscode.cpptools` |
+| CMake | `twxs.cmake` |
+| CMake Tools | `ms-vscode.cmake-tools` |
+| Cortex-Debug | `marus25.cortex-debug` |
+
+建议再安装：
+
+| 插件 | 扩展 ID |
+| --- | --- |
+| ARM Assembly | `dan-c-underwood.arm` |
+
+手动安装方法：
+
+1. 在 VS Code 按 `Ctrl+Shift+X`。
+2. 搜索扩展 ID。
+3. 点击 `Install`。
+
+自动安装方法：
+
+```powershell
+code --install-extension ms-vscode.cpptools
+code --install-extension twxs.cmake
+code --install-extension ms-vscode.cmake-tools
+code --install-extension marus25.cortex-debug
+code --install-extension dan-c-underwood.arm
+```
+
+## 4. 不想使用 Codex 时
 
 打开 PowerShell，进入本项目目录：
 
@@ -79,7 +112,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\install-stm32-tools.ps1
 powershell -ExecutionPolicy Bypass -File .\scripts\check-stm32-tools.ps1
 ```
 
-## 4. 脚本会做什么
+## 5. 脚本会做什么
 
 `install-stm32-tools.ps1` 会：
 
@@ -98,7 +131,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\check-stm32-tools.ps1
 - 删除你的工程。
 - 自动烧录开发板。
 
-## 5. 检查成功的方法
+## 6. 检查成功的方法
 
 如果看到下面这些版本信息，就说明工具装好了：
 
@@ -111,7 +144,7 @@ Open On-Chip Debugger 0.x
 
 版本号不要求完全一致。
 
-## 6. 如果 winget 找不到
+## 7. 如果 winget 找不到
 
 对 Codex 说：
 
@@ -119,7 +152,7 @@ Open On-Chip Debugger 0.x
 我的电脑没有 winget。请改用 Arm、CMake、Ninja 和 OpenOCD 官方下载页面，一步一步带我从网页下载并安装。每一步都告诉我完成后应该看到什么。
 ```
 
-## 7. 接下来做什么
+## 8. 接下来做什么
 
 工具装好后，打开：
 
@@ -136,7 +169,7 @@ BEGINNER-GUIDE.md
 - 怎样接四根线。
 - 怎样按 `F5` 让程序停在断点。
 
-## 8. 如果失败
+## 9. 如果失败
 
 把 Codex 或 PowerShell 里的完整错误复制给 Codex，然后说：
 

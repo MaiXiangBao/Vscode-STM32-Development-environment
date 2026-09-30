@@ -146,7 +146,7 @@ Codex 会用 Windows 自带的 `winget` 自动安装：
 仓库地址：
 
 ```text
-https://github.com/MaiXiangBao/VScode-STM32-
+https://github.com/MaiXiangBao/Vscode-STM32-Development-environment
 ```
 
 ### 第二步：复制这句话给 Codex
@@ -396,18 +396,25 @@ C:\STM32\Projects\stm32f103c8t6-blink
 
 ### 动作 2：安装扩展
 
+![VS Code 必装插件](./assets/diagrams/kids-vscode-extensions.svg)
+
 按：
 
 ```text
 Ctrl+Shift+X
 ```
 
-搜索并安装：
+搜索并安装下面五个插件：
 
-- `C/C++`
-- `CMake`
-- `CMake Tools`
-- `Cortex-Debug`
+| 插件 | 扩展 ID | 做什么 | 是否必须 |
+| --- | --- | --- | --- |
+| C/C++ | `ms-vscode.cpptools` | 代码提示、跳转、查看变量 | 必须 |
+| CMake | `twxs.cmake` | 让 CMake 文件有颜色和提示 | 必须 |
+| CMake Tools | `ms-vscode.cmake-tools` | 配置和构建工程 | 必须 |
+| Cortex-Debug | `marus25.cortex-debug` | 按 `F5` 调试 | 必须 |
+| ARM Assembly | `dan-c-underwood.arm` | 让 `.s` 启动文件更容易看 | 建议 |
+
+安装完成后，扩展面板里应该能同时看到这些名字。
 
 ### 动作 3：构建
 

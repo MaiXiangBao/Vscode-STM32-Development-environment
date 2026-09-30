@@ -25,7 +25,28 @@
 - `Ninja`
 - `OpenOCD`
 
-Codex 会调用 Windows 自带的 `winget`，不需要你自己去官网找，也不会把本机工具链打包上传。
+Codex 会调用 Windows 自带的 `winget`，不需要你自己去官网找。
+
+## VS Code 还必须安装这些插件
+
+![VS Code 必装插件](./assets/diagrams/kids-vscode-extensions.svg)
+
+| 插件 | 扩展 ID | 作用 | 是否必须 |
+| --- | --- | --- | --- |
+| C/C++ | `ms-vscode.cpptools` | 代码提示、跳转定义、查看函数和变量 | 必须 |
+| CMake | `twxs.cmake` | 让 `CMakeLists.txt` 有颜色和语法提示 | 必须 |
+| CMake Tools | `ms-vscode.cmake-tools` | 选择 Debug、配置工程、构建工程 | 必须 |
+| Cortex-Debug | `marus25.cortex-debug` | 按 `F5`、连接 OpenOCD、设置断点、看寄存器 | 必须 |
+| ARM Assembly | `dan-c-underwood.arm` | 让启动文件 `.s` 更容易阅读 | 建议 |
+
+安装方法：
+
+1. 在 VS Code 中按 `Ctrl+Shift+X`。
+2. 搜索上表中的扩展 ID。
+3. 点击 `Install`。
+4. 安装完成后按提示重新加载 VS Code。
+
+也可以让 Codex 自动安装。部署脚本会执行对应的 `code --install-extension` 命令。
 
 ## 最简单的开始方法
 
@@ -34,7 +55,7 @@ Codex 会调用 Windows 自带的 `winget`，不需要你自己去官网找，�
 仓库地址：
 
 ```text
-https://github.com/MaiXiangBao/VScode-STM32-
+https://github.com/MaiXiangBao/Vscode-STM32-Development-environment
 ```
 
 ### 第 2 步：把这句话复制给 Codex
@@ -98,20 +119,6 @@ Codex 帮你把环境装好并解释错误
 | [05 CMake 模板](./docs/05-cmake-template.md) | 想换芯片或理解 CMake |
 | [06 故障排查](./docs/06-troubleshooting.md) | 出现具体错误时 |
 | [07 命令速查](./docs/07-cheatsheet.md) | 已经会基本操作后 |
-
-## 为什么不再打包本机工具链
-
-本机工具链总大小超过 1.2 GB，直接提交到 GitHub 会非常笨重，也不利于版本更新。
-
-更简单、更安全的方法是：
-
-```text
-仓库只保存教程和脚本
-Codex 使用 winget 安装官方包
-同学只手动安装 VS Code 和 STM32CubeMX
-```
-
-这样每个人装的都是从官方源获取的最新稳定版本。
 
 ## 如果不想使用 Codex
 
