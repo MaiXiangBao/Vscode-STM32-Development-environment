@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="900" viewBox="0 0 1420 900" role="img" aria-labelledby="title desc">
+  <title id="title">典型 CubeMX CMake 工程结构</title>
+  <desc id="desc">展示 CubeMX 生成文件、用户代码、构建目录和 VS Code 配置之间的关系。</desc>
+  <rect width="1420" height="900" fill="#f8fafc"/>
+  <text x="60" y="66" fill="#0f172a" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="34" font-weight="800">工程目录中，哪些该改，哪些不要改</text>
+  <g font-family="Consolas, Microsoft YaHei, monospace" font-size="20">
+    <rect x="52" y="112" width="560" height="718" rx="14" fill="#0f172a"/>
+    <text x="82" y="158" fill="#5eead4" font-size="21" font-weight="800">stm32f103c8t6-blink/</text>
+    <text x="104" y="194" fill="#e2e8f0">├─ stm32f103c8t6-blink.ioc</text>
+    <text x="104" y="230" fill="#fbbf24">├─ Core/</text>
+    <text x="126" y="266" fill="#cbd5e1">│  ├─ Inc/main.h</text>
+    <text x="126" y="302" fill="#cbd5e1">│  └─ Src/main.c</text>
+    <text x="104" y="338" fill="#93c5fd">├─ Drivers/</text>
+    <text x="126" y="374" fill="#cbd5e1">│  ├─ CMSIS/</text>
+    <text x="126" y="410" fill="#cbd5e1">│  └─ STM32F1xx_HAL_Driver/</text>
+    <text x="104" y="446" fill="#86efac">├─ cmake/</text>
+    <text x="126" y="482" fill="#cbd5e1">│  ├─ gcc-arm-none-eabi.cmake</text>
+    <text x="126" y="518" fill="#cbd5e1">│  └─ stm32cubemx/CMakeLists.txt</text>
+    <text x="104" y="554" fill="#c4b5fd">├─ .vscode/</text>
+    <text x="126" y="590" fill="#cbd5e1">│  ├─ settings.json</text>
+    <text x="126" y="626" fill="#cbd5e1">│  ├─ tasks.json</text>
+    <text x="126" y="662" fill="#cbd5e1">│  └─ launch.json</text>
+    <text x="104" y="698" fill="#fca5a5">├─ build/Debug/</text>
+    <text x="126" y="734" fill="#cbd5e1">│  └─ *.elf / *.hex / *.bin</text>
+    <text x="104" y="770" fill="#e2e8f0">├─ CMakeLists.txt</text>
+    <text x="104" y="806" fill="#e2e8f0">└─ CMakePresets.json</text>
+  </g>
+
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <rect x="660" y="112" width="700" height="206" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="690" y="156" fill="#065f46" font-size="25" font-weight="800">可以改</text>
+    <text x="690" y="198" fill="#334155" font-size="19">.ioc：保留配置源文件；CubeMX 重新生成靠它。</text>
+    <text x="690" y="234" fill="#334155" font-size="19">main.c / 自定义源文件：只在 USER CODE BEGIN ... END 之间写。</text>
+    <text x="690" y="270" fill="#334155" font-size="19">.vscode、OpenOCD 脚本、自定义 CMake 配置：按项目维护。</text>
+
+    <rect x="660" y="346" width="700" height="206" rx="14" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+    <text x="690" y="390" fill="#9a3412" font-size="25" font-weight="800">通常不要手改</text>
+    <text x="690" y="432" fill="#334155" font-size="19">Drivers：CubeMX 更新固件包时可能整体重写。</text>
+    <text x="690" y="468" fill="#334155" font-size="19">cmake/stm32cubemx：重新生成时可能覆盖。</text>
+    <text x="690" y="504" fill="#334155" font-size="19">启动文件、链接脚本：除非你明确知道需要改什么。</text>
+
+    <rect x="660" y="580" width="700" height="250" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+    <text x="690" y="624" fill="#1e3a8a" font-size="25" font-weight="800">构建产物与源码分开</text>
+    <text x="690" y="666" fill="#334155" font-size="19">源码根目录不放 .o、.d、.map 等中间文件。</text>
+    <text x="690" y="702" fill="#334155" font-size="19">CMake 统一输出到 build/Debug 或 build/Release。</text>
+    <text x="690" y="738" fill="#334155" font-size="19">.gitignore 至少忽略 build/ 和 .cache/。</text>
+    <text x="690" y="784" fill="#b91c1c" font-size="19" font-weight="700">不要把 build/ 提交到 GitHub。</text>
+  </g>
+</svg>

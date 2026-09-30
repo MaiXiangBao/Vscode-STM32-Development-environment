@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720" role="img" aria-labelledby="title desc">
+  <title id="title">OpenOCD 调试链路</title>
+  <desc id="desc">VS Code Cortex-Debug 通过 GDB 和 OpenOCD 控制 ST-Link 调试 STM32。</desc>
+  <rect width="1500" height="720" fill="#f9fafb"/>
+  <text x="62" y="66" fill="#0f172a" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="34" font-weight="800">按下 F5 后，实际发生了什么</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <rect x="62" y="154" width="228" height="160" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="88" y="198" fill="#1e3a8a" font-size="24" font-weight="800">VS Code</text>
+    <text x="88" y="236" fill="#334155" font-size="18">Cortex-Debug</text>
+    <text x="88" y="268" fill="#334155" font-size="18">启动、UI、断点</text>
+
+    <path d="M302 234h72" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow3)"/>
+    <rect x="386" y="154" width="228" height="160" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+    <text x="412" y="198" fill="#14532d" font-size="24" font-weight="800">arm-none-eabi-gdb</text>
+    <text x="412" y="236" fill="#334155" font-size="18">读取 ELF 调试信息</text>
+    <text x="412" y="268" fill="#334155" font-size="18">控制断点和单步</text>
+
+    <path d="M626 234h72" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow3)"/>
+    <rect x="710" y="154" width="228" height="160" rx="14" fill="#f3e8ff" stroke="#9333ea" stroke-width="3"/>
+    <text x="736" y="198" fill="#581c87" font-size="24" font-weight="800">OpenOCD</text>
+    <text x="736" y="236" fill="#334155" font-size="18">GDB Server</text>
+    <text x="736" y="268" fill="#334155" font-size="18">转换为 SWD 操作</text>
+
+    <path d="M950 234h72" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow3)"/>
+    <rect x="1034" y="154" width="228" height="160" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="3"/>
+    <text x="1060" y="198" fill="#7f1d1d" font-size="24" font-weight="800">ST-Link V2</text>
+    <text x="1060" y="236" fill="#334155" font-size="18">USB 设备</text>
+    <text x="1060" y="268" fill="#334155" font-size="18">SWDIO / SWCLK</text>
+
+    <path d="M1274 234h74" stroke="#0f172a" stroke-width="4" marker-end="url(#arrow3)"/>
+    <rect x="1360" y="154" width="86" height="160" rx="14" fill="#e2e8f0" stroke="#475569" stroke-width="3"/>
+    <text x="1403" y="212" text-anchor="middle" fill="#0f172a" font-size="18" font-weight="800">STM</text>
+    <text x="1403" y="244" text-anchor="middle" fill="#0f172a" font-size="18" font-weight="800">32</text>
+    <text x="1403" y="282" text-anchor="middle" fill="#334155" font-size="15">CPU</text>
+
+    <rect x="120" y="406" width="1260" height="210" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="152" y="450" fill="#0f172a" font-size="23" font-weight="800">调试时你能观察什么</text>
+    <g font-size="18" fill="#334155">
+      <text x="170" y="500">变量和结构体</text>
+      <text x="380" y="500">调用栈</text>
+      <text x="550" y="500">寄存器</text>
+      <text x="730" y="500">外设寄存器</text>
+      <text x="930" y="500">内存和数组</text>
+      <text x="1130" y="500">断点与单步</text>
+    </g>
+    <text x="170" y="552" fill="#b91c1c" font-size="19" font-weight="700">重要：调试的不是 .bin，而是带符号表的 .elf。</text>
+    <text x="170" y="584" fill="#475569" font-size="18">Release 若去掉调试信息，仍可烧录，但断点和变量体验会明显下降。</text>
+  </g>
+  <defs>
+    <marker id="arrow3" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L12 6L0 12z" fill="#0f172a"/>
+    </marker>
+  </defs>
+</svg>

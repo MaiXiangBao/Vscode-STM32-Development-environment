@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-labelledby="title desc">
+  <title id="title">STM32 环境排错决策图</title>
+  <desc id="desc">根据症状定位命令、编译、连接或调试阶段的问题。</desc>
+  <rect width="1500" height="900" fill="#f8fafc"/>
+  <text x="60" y="66" fill="#0f172a" font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif" font-size="34" font-weight="800">不要同时猜五个配置，按阶段定位</text>
+  <g font-family="Microsoft YaHei, Noto Sans SC, Arial, sans-serif">
+    <rect x="590" y="102" width="320" height="90" rx="14" fill="#0f172a"/>
+    <text x="750" y="142" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">先确认失败发生在哪里</text>
+    <text x="750" y="172" text-anchor="middle" fill="#cbd5e1" font-size="17">版本 / 配置 / 构建 / 连接 / 运行</text>
+
+    <path d="M750 192v52H230v52M750 192v52h520v52M750 192v52h-160v52M750 192v52h160v52M750 192v52H920v52M750 192v52h-340v52" stroke="#94a3b8" stroke-width="3" fill="none"/>
+
+    <g>
+      <rect x="60" y="296" width="310" height="166" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+      <text x="86" y="336" fill="#7f1d1d" font-size="21" font-weight="800">命令找不到</text>
+      <text x="86" y="374" fill="#334155" font-size="17">gcc / cmake / ninja</text>
+      <text x="86" y="402" fill="#334155" font-size="17">openocd 不是内部命令</text>
+      <text x="86" y="438" fill="#b91c1c" font-size="16">查 PATH 与重启终端</text>
+    </g>
+    <g>
+      <rect x="390" y="296" width="310" height="166" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+      <text x="416" y="336" fill="#7c2d12" font-size="21" font-weight="800">CMake 配置失败</text>
+      <text x="416" y="374" fill="#334155" font-size="17">找不到编译器或 Ninja</text>
+      <text x="416" y="402" fill="#334155" font-size="17">工具链文件路径错误</text>
+      <text x="416" y="438" fill="#9a3412" font-size="16">查 CMakePresets 与缓存</text>
+    </g>
+    <g>
+      <rect x="720" y="296" width="310" height="166" rx="12" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+      <text x="746" y="336" fill="#713f12" font-size="21" font-weight="800">编译或链接失败</text>
+      <text x="746" y="374" fill="#334155" font-size="17">语法错误 / 头文件路径</text>
+      <text x="746" y="402" fill="#334155" font-size="17">undefined reference</text>
+      <text x="746" y="438" fill="#854d0e" font-size="16">先看第一条 error</text>
+    </g>
+    <g>
+      <rect x="1050" y="296" width="390" height="166" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+      <text x="1076" y="336" fill="#4c1d95" font-size="21" font-weight="800">OpenOCD 连接失败</text>
+      <text x="1076" y="374" fill="#334155" font-size="17">找不到 ST-Link / 驱动 / 脚本</text>
+      <text x="1076" y="402" fill="#334155" font-size="17">target voltage / no device</text>
+      <text x="1076" y="438" fill="#5b21b6" font-size="16">先单独运行 OpenOCD</text>
+    </g>
+
+    <rect x="140" y="548" width="1220" height="276" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="176" y="592" fill="#0f172a" font-size="24" font-weight="800">固定排错顺序</text>
+    <g font-size="18" fill="#334155">
+      <text x="176" y="644">1. 在 PowerShell 里验证每个命令的版本。</text>
+      <text x="176" y="684">2. 用 cmake --preset debug 配置，再用 cmake --build --preset debug 构建。</text>
+      <text x="176" y="724">3. 找到 .elf，确认它存在且时间戳是刚刚生成的。</text>
+      <text x="176" y="764">4. 用 openocd -f interface/stlink.cfg -f target/stm32f1x.cfg 单独测试连接。</text>
+      <text x="176" y="804">5. 最后再启动 VS Code 调试，把完整错误贴到终端和 DEBUG CONSOLE 查看。</text>
+    </g>
+  </g>
+</svg>
