@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "tutorial-debug",
+      "displayName": "STM32 tutorial / Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/Debug",
+      "toolchainFile": "${sourceDir}/cmake/gcc-arm-none-eabi.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": true
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "tutorial-debug",
+      "configurePreset": "tutorial-debug"
+    }
+  ]
+}

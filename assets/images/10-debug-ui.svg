@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="710" viewBox="0 0 1200 710">
+<rect width="1200" height="710" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">断点调试：三个位置先学会看</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Run and Debug 中选本文配置；下面是位置示意，实际布局随版本变化</text>
+<text x="42" y="674" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创操作示意 · 非软件截图</text>
+<rect x="44" y="142" width="298" height="477" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="162" fill="#7153b5" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">VARIABLES / WATCH</text>
+<text x="67" y="218" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">now = …</text>
+<text x="67" y="256" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">last_tick = …</text>
+<text x="67" y="294" fill="#218461" font-size="22" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">s_blink_count = 1</text>
+<text x="66" y="371" fill="#7153b5" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CALL STACK</text>
+<text x="67" y="425" fill="#122c47" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">main</text>
+<text x="67" y="464" fill="#4d6478" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">当前函数调用链</text>
+<rect x="372" y="142" width="784" height="320" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="393" y="162" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">main.c  /  主循环</text>
+<text x="421" y="218" fill="#122c47" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">uint32_t now = HAL_GetTick();</text>
+<text x="421" y="264" fill="#122c47" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">if (时间差 &gt;= 500 ms)</text>
+<rect x="385" y="308" width="748" height="42" rx="5" fill="#fff0b9" stroke="none" stroke-width="2"/>
+<rect x="389" y="322" width="12" height="12" rx="6" fill="#d83f43" stroke="none" stroke-width="2"/>
+<text x="421" y="315" fill="#122c47" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">    HAL_GPIO_TogglePin(...);</text>
+<text x="421" y="363" fill="#122c47" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">    ++s_blink_count;</text>
+<text x="395" y="412" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">红点：断点；黄色行：下一条待执行位置</text>
+<rect x="372" y="492" width="784" height="127" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="390" y="509" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">调试工具栏</text>
+<text x="390" y="553" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">F5 继续    F10 单步跳过    F11 进入函数</text>
+<text x="390" y="584" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Shift + F5 停止；暂停会改变 LED 的时间行为。</text>
+</svg>

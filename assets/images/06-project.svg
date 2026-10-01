@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+<rect width="1200" height="660" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CubeMX：生成工程前检查这些选项</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Project Manager 中配置；最终工程根目录要同时有 .ioc 和 CMakeLists.txt</text>
+<text x="42" y="624" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创操作示意 · 非软件截图</text>
+<rect x="44" y="145" width="710" height="432" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="64" y="179" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Project Name</text>
+<rect x="333" y="167" width="394" height="51" rx="14" fill="#eaf3ff" stroke="none" stroke-width="2"/>
+<text x="349" y="180" fill="#176fc1" font-size="18" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">STM32_Blink</text>
+<text x="64" y="253" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">最终工程目录</text>
+<rect x="333" y="241" width="394" height="51" rx="14" fill="#eaf3ff" stroke="none" stroke-width="2"/>
+<text x="349" y="254" fill="#176fc1" font-size="18" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">C:/STM32Projects/STM32_Blink</text>
+<text x="64" y="327" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Toolchain / IDE</text>
+<rect x="333" y="315" width="394" height="51" rx="14" fill="#eaf3ff" stroke="none" stroke-width="2"/>
+<text x="349" y="328" fill="#176fc1" font-size="18" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CMake</text>
+<text x="64" y="401" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Default Compiler / Linker</text>
+<rect x="333" y="389" width="394" height="51" rx="14" fill="#eaf3ff" stroke="none" stroke-width="2"/>
+<text x="349" y="402" fill="#176fc1" font-size="18" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">GCC</text>
+<text x="64" y="475" fill="#4d6478" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">固件包</text>
+<rect x="333" y="463" width="394" height="51" rx="14" fill="#eaf3ff" stroke="none" stroke-width="2"/>
+<text x="349" y="476" fill="#176fc1" font-size="18" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">STM32Cube FW_F1</text>
+<rect x="800" y="145" width="356" height="214" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="818" y="162" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Code Generator</text>
+<text x="818" y="206" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Keep User Code：勾选</text>
+<text x="818" y="237" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">所需库：复制进工程</text>
+<text x="818" y="268" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">之后检查 USER CODE 保留</text>
+<rect x="800" y="398" width="356" height="82" rx="14" fill="#176fc1" stroke="none" stroke-width="2"/>
+<text x="978" y="422" fill="white" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge">GENERATE CODE</text>
+<text x="801" y="511" fill="#122c47" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">生成完再核对目录与文件。</text>
+</svg>

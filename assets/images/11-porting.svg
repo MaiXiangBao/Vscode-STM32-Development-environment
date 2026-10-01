@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580">
+<rect width="1200" height="580" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">换芯片时，检查这三组内容</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">生成对应型号的新工程，再迁移应用代码与通用编辑器配置</text>
+<text x="42" y="544" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="151" width="333" height="281" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="168" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">硬件与 CubeMX</text>
+<text x="62" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">真实型号与封装</text>
+<text x="62" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">LED 引脚、有效电平</text>
+<text x="62" y="274" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">HSI / HSE / PLL 配置</text>
+<text x="62" y="305" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">SWD 接线、供电和复位</text>
+<rect x="434" y="151" width="333" height="281" rx="14" fill="#fff3e7" stroke="#b66416" stroke-width="2"/>
+<text x="452" y="168" fill="#b66416" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">编译与内存</text>
+<text x="452" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">启动文件、中断向量表</text>
+<text x="452" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">芯片宏、CPU / FPU 参数</text>
+<text x="452" y="274" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Flash / RAM 链接脚本</text>
+<text x="452" y="305" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">HAL / CMSIS 对应系列</text>
+<rect x="824" y="151" width="332" height="281" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="842" y="168" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">下载与调试</text>
+<text x="842" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">OpenOCD target 脚本</text>
+<text x="842" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">实际支持的探针驱动</text>
+<text x="842" y="274" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">ELF 的名称与构建目录</text>
+<text x="842" y="305" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">F5 前的编译任务</text>
+<text x="44" y="473" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">本例：Cortex-M3 · Flash 64 KB · RAM 20 KB · target/stm32f1x.cfg。</text>
+</svg>

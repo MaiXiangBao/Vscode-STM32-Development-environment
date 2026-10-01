@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="1200" height="680" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">构建分三步：Configure、Compile、Link</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Configuring done 只表示规则已生成；生成 ELF 才完成本次构建</text>
+<text x="42" y="644" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="144" width="333" height="184" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="161" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">1  CMake Configure</text>
+<text x="62" y="205" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">读取 CMakeLists 和预设</text>
+<text x="62" y="236" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">识别 arm-none-eabi-gcc</text>
+<text x="62" y="267" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">生成 build.ninja</text>
+<rect x="434" y="144" width="333" height="184" rx="14" fill="#fff3e7" stroke="#b66416" stroke-width="2"/>
+<text x="452" y="161" fill="#b66416" font-size="24" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">2  Ninja → GCC Compile</text>
+<text x="452" y="205" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">执行每个源文件的编译</text>
+<text x="452" y="236" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.c / .s → .o</text>
+<text x="452" y="267" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">未改变的文件通常无需重编</text>
+<rect x="824" y="144" width="332" height="184" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="842" y="161" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">3  GCC Link</text>
+<text x="842" y="205" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">按 .ld 链接目标文件</text>
+<text x="842" y="236" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">生成 STM32_Blink.elf</text>
+<text x="842" y="267" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">还可生成 .map</text>
+<line x1="383" y1="235" x2="425" y2="235" stroke="#4d6478" stroke-width="3"/>
+<polygon points="425.0,235.0 414.5,240.8 414.5,229.2" fill="#4d6478"/>
+<line x1="773" y1="235" x2="815" y2="235" stroke="#4d6478" stroke-width="3"/>
+<polygon points="815.0,235.0 804.5,240.8 804.5,229.2" fill="#4d6478"/>
+<rect x="44" y="373" width="1112" height="199" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="65" y="394" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">cmake --preset tutorial-debug</text>
+<text x="65" y="446" fill="#b66416" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">cmake --build --preset tutorial-debug --parallel</text>
+<text x="65" y="505" fill="#218461" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">验收：build/Debug/STM32_Blink.elf 存在，构建退出码为 0。</text>
+</svg>

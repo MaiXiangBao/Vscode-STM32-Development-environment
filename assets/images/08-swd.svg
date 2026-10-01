@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="810" viewBox="0 0 1200 810">
+<rect width="1200" height="810" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">F103C8T6：连接外置 ST-LINK</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">芯片 SWDIO / SWCLK 引脚要保留；USB 线必须支持数据传输</text>
+<text x="42" y="774" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="140" width="1112" height="117" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="157" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">STM32F103C8T6 最小系统板 · BOOT0 = 0</text>
+<text x="62" y="201" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">电脑 USB → 外置 ST-LINK → SWD 信号线 → STM32F103C8T6</text>
+<rect x="44" y="295" width="338" height="309" rx="14" fill="#f2edfc" stroke="#7153b5" stroke-width="2"/>
+<rect x="819" y="295" width="337" height="309" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="213" y="310" fill="#7153b5" font-size="27" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge">外置 ST-LINK</text>
+<text x="987" y="310" fill="#218461" font-size="27" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle" dominant-baseline="text-before-edge">STM32F103C8T6</text>
+<text x="67" y="366" fill="#176fc1" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">SWDIO</text>
+<text x="841" y="366" fill="#176fc1" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">PA13 / SWDIO</text>
+<line x1="387" y1="381" x2="811" y2="381" stroke="#176fc1" stroke-width="3"/>
+<polygon points="811.0,381.0 800.5,386.8 800.5,375.2" fill="#176fc1"/>
+<text x="67" y="410" fill="#b66416" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">SWCLK</text>
+<text x="841" y="410" fill="#b66416" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">PA14 / SWCLK</text>
+<line x1="387" y1="425" x2="811" y2="425" stroke="#b66416" stroke-width="3"/>
+<polygon points="811.0,425.0 800.5,430.8 800.5,419.2" fill="#b66416"/>
+<text x="67" y="454" fill="#4d6478" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">GND</text>
+<text x="841" y="454" fill="#4d6478" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">GND</text>
+<line x1="387" y1="469" x2="811" y2="469" stroke="#4d6478" stroke-width="3"/>
+<polygon points="811.0,469.0 800.5,474.8 800.5,463.2" fill="#4d6478"/>
+<text x="67" y="498" fill="#7153b5" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">VTref / Vref</text>
+<text x="841" y="498" fill="#7153b5" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">目标板 3.3 V 电源域</text>
+<line x1="387" y1="513" x2="811" y2="513" stroke="#7153b5" stroke-width="3"/>
+<polygon points="811.0,513.0 800.5,518.8 800.5,507.2" fill="#7153b5"/>
+<text x="67" y="542" fill="#218461" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">NRST</text>
+<text x="841" y="542" fill="#218461" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">NRST（建议连接）</text>
+<line x1="387" y1="557" x2="811" y2="557" stroke="#218461" stroke-width="3"/>
+<polygon points="811.0,557.0 800.5,562.8 800.5,551.2" fill="#218461"/>
+<rect x="44" y="641" width="1112" height="87" rx="14" fill="#fff3e7" stroke="none" stroke-width="2"/>
+<text x="65" y="657" fill="#b66416" font-size="24" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">VTref 是目标电压参考；是否能供电要看探针说明。</text>
+<text x="65" y="696" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">目标板须有稳定供电和共地，避免两个电源输出直接相连。</text>
+</svg>

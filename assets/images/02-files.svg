@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">你会遇到的文件：谁生成，谁使用</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">ELF 是本教程烧录与调试的共同产物；BIN 和 HEX 按需转换</text>
+<text x="42" y="584" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="151" width="308" height="158" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="168" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.ioc：硬件配置</text>
+<text x="62" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CubeMX 保存</text>
+<text x="62" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">改引脚、时钟时重新打开</text>
+<rect x="447" y="151" width="308" height="158" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="465" y="168" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.c / .h / .s / .ld</text>
+<text x="465" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">源码、启动代码、链接脚本</text>
+<text x="465" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">GCC 编译和链接的输入</text>
+<rect x="850" y="151" width="306" height="158" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="868" y="168" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.elf：完整固件</text>
+<text x="868" y="212" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">含加载地址和调试符号</text>
+<text x="868" y="243" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">OpenOCD 下载，GDB 读符号</text>
+<line x1="365" y1="227" x2="434" y2="227" stroke="#4d6478" stroke-width="3"/>
+<polygon points="434.0,227.0 423.5,232.8 423.5,221.2" fill="#4d6478"/>
+<line x1="768" y1="227" x2="837" y2="227" stroke="#4d6478" stroke-width="3"/>
+<polygon points="837.0,227.0 826.5,232.8 826.5,221.2" fill="#4d6478"/>
+<line x1="1000" y1="321" x2="1000" y2="368" stroke="#4d6478" stroke-width="3"/>
+<polygon points="1000.0,368.0 994.2,357.5 1005.8,357.5" fill="#4d6478"/>
+<rect x="44" y="391" width="712" height="132" rx="14" fill="#f2edfc" stroke="#7153b5" stroke-width="2"/>
+<text x="62" y="408" fill="#7153b5" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CMakeLists + 预设 + 工具链文件</text>
+<text x="62" y="452" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">描述编译规则；CMake 生成 build.ninja，Ninja 调用 GCC</text>
+<text x="62" y="483" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">build/Debug 存构建产物，compile_commands.json 记录编译参数</text>
+<rect x="850" y="391" width="306" height="132" rx="14" fill="#fff3e7" stroke="#b66416" stroke-width="2"/>
+<text x="868" y="408" fill="#b66416" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.bin / .hex：可选</text>
+<text x="868" y="452" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">由 objcopy 从 ELF 转换</text>
+<text x="868" y="483" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">BIN 下载要指定起始地址</text>
+</svg>

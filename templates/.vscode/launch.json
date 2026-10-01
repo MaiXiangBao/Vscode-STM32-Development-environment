@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "STM32: Debug (OpenOCD + ST-LINK)",
+      "cwd": "${workspaceFolder}",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "executable": "${workspaceFolder}/build/Debug/STM32_Blink.elf",
+      "runToEntryPoint": "main",
+      "preLaunchTask": "STM32: Build",
+      "serverpath": "openocd",
+      "gdbPath": "arm-none-eabi-gdb",
+      "configFiles": ["${workspaceFolder}/openocd.cfg"]
+    }
+  ]
+}

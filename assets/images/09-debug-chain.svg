@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+<rect width="1200" height="660" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">按 F5 后，断点指令怎样到达芯片</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">ELF 提供源码与符号；硬件运行状态沿调试链路返回界面</text>
+<text x="42" y="624" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="163" width="207" height="151" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="180" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">VS Code</text>
+<text x="62" y="224" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Cortex-Debug</text>
+<line x1="254" y1="240" x2="266" y2="240" stroke="#4d6478" stroke-width="3"/>
+<polygon points="266.0,240.0 255.5,245.8 255.5,234.2" fill="#4d6478"/>
+<rect x="270" y="163" width="207" height="151" rx="14" fill="#f2edfc" stroke="#7153b5" stroke-width="2"/>
+<text x="288" y="180" fill="#7153b5" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Arm GDB</text>
+<text x="288" y="224" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">读取 ELF 符号</text>
+<line x1="480" y1="240" x2="492" y2="240" stroke="#4d6478" stroke-width="3"/>
+<polygon points="492.0,240.0 481.5,245.8 481.5,234.2" fill="#4d6478"/>
+<rect x="496" y="163" width="207" height="151" rx="14" fill="#fff3e7" stroke="#b66416" stroke-width="2"/>
+<text x="514" y="180" fill="#b66416" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">OpenOCD</text>
+<text x="514" y="224" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">本地 GDB 服务</text>
+<line x1="706" y1="240" x2="718" y2="240" stroke="#4d6478" stroke-width="3"/>
+<polygon points="718.0,240.0 707.5,245.8 707.5,234.2" fill="#4d6478"/>
+<rect x="722" y="163" width="207" height="151" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="740" y="180" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">ST-LINK</text>
+<text x="740" y="224" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">USB / SWD</text>
+<line x1="932" y1="240" x2="944" y2="240" stroke="#4d6478" stroke-width="3"/>
+<polygon points="944.0,240.0 933.5,245.8 933.5,234.2" fill="#4d6478"/>
+<rect x="948" y="163" width="207" height="151" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="966" y="180" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">STM32</text>
+<text x="966" y="224" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">执行 / 暂停</text>
+<rect x="44" y="365" width="1112" height="191" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="67" y="386" fill="#7153b5" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">F5 启动顺序</text>
+<text x="67" y="431" fill="#122c47" font-size="24" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">先 Build → 启动 OpenOCD → GDB 连接 → 下载并复位 → 停在 main</text>
+<text x="67" y="484" fill="#b66416" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">不要同时让 CubeProgrammer、手工 OpenOCD 和其他调试器占用探针。</text>
+</svg>

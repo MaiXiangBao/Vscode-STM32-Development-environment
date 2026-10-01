@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+<rect width="1200" height="640" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">安装目录与 PATH：添加可执行程序所在目录</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">保留完整工具包；PATH 只添加目录，原有条目继续保留</text>
+<text x="42" y="604" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="144" width="1112" height="75" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="168" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Arm GCC</text>
+<text x="237" y="169" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">C:/STM32Tools/arm-gnu/bin</text>
+<line x1="755" y1="182" x2="802" y2="182" stroke="#4d6478" stroke-width="3"/>
+<polygon points="802.0,182.0 791.5,187.8 791.5,176.2" fill="#4d6478"/>
+<text x="823" y="169" fill="#122c47" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">arm-none-eabi-gcc.exe</text>
+<rect x="44" y="235" width="1112" height="75" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="259" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">CMake</text>
+<text x="237" y="260" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">C:/STM32Tools/cmake/bin</text>
+<line x1="755" y1="273" x2="802" y2="273" stroke="#4d6478" stroke-width="3"/>
+<polygon points="802.0,273.0 791.5,278.8 791.5,267.2" fill="#4d6478"/>
+<text x="823" y="260" fill="#122c47" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">cmake.exe</text>
+<rect x="44" y="326" width="1112" height="75" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="350" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Ninja</text>
+<text x="237" y="351" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">C:/STM32Tools/ninja</text>
+<line x1="755" y1="364" x2="802" y2="364" stroke="#4d6478" stroke-width="3"/>
+<polygon points="802.0,364.0 791.5,369.8 791.5,358.2" fill="#4d6478"/>
+<text x="823" y="351" fill="#122c47" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">ninja.exe</text>
+<rect x="44" y="417" width="1112" height="75" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="441" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">OpenOCD</text>
+<text x="237" y="442" fill="#122c47" font-size="22" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">C:/STM32Tools/openocd/bin</text>
+<line x1="755" y1="455" x2="802" y2="455" stroke="#4d6478" stroke-width="3"/>
+<polygon points="802.0,455.0 791.5,460.8 791.5,449.2" fill="#4d6478"/>
+<text x="823" y="442" fill="#122c47" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">openocd.exe</text>
+<rect x="44" y="528" width="1112" height="54" rx="14" fill="#fff3e7" stroke="none" stroke-width="2"/>
+<text x="66" y="541" fill="#b66416" font-size="23" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">保存后：关掉旧终端和 VS Code，重开后用 Get-Command 查看实际路径。</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+<rect width="1200" height="780" fill="#f4f7fb"/>
+<rect x="0" y="0" width="1200" height="106" rx="0" fill="#122c47" stroke="none" stroke-width="2"/>
+<text x="42" y="24" fill="white" font-size="31" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">一张图看懂 STM32 开发环境</text>
+<text x="43" y="69" fill="#c7d9e9" font-size="19" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">先生成工程，再构建固件；烧录和调试都通过探针连接目标芯片</text>
+<text x="42" y="744" fill="#4d6478" font-size="16" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">原创结构示意 · 对照正文操作与验收</text>
+<rect x="44" y="142" width="330" height="146" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="62" y="159" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">1  CubeMX：硬件配置</text>
+<text x="62" y="203" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">选芯片 · 配引脚 · 配时钟</text>
+<text x="62" y="234" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">.ioc → 初始化代码 + CMake</text>
+<rect x="436" y="142" width="330" height="146" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="454" y="159" fill="#176fc1" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">2  VS Code：编写程序</text>
+<text x="454" y="203" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">编辑 main.c 和应用源码</text>
+<text x="454" y="234" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">扩展提供补全与操作入口</text>
+<rect x="828" y="142" width="328" height="146" rx="14" fill="#eaf3ff" stroke="#176fc1" stroke-width="2"/>
+<text x="846" y="159" fill="#176fc1" font-size="23" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">3  CMake → Ninja → GCC</text>
+<text x="846" y="203" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">生成规则 → 执行 → 编译链接</text>
+<text x="846" y="234" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">输出 STM32_Blink.elf</text>
+<line x1="379" y1="212" x2="427" y2="212" stroke="#4d6478" stroke-width="3"/>
+<polygon points="427.0,212.0 416.5,217.8 416.5,206.2" fill="#4d6478"/>
+<line x1="774" y1="212" x2="819" y2="212" stroke="#4d6478" stroke-width="3"/>
+<polygon points="819.0,212.0 808.5,217.8 808.5,206.2" fill="#4d6478"/>
+<line x1="990" y1="300" x2="990" y2="380" stroke="#4d6478" stroke-width="3"/>
+<polygon points="990.0,380.0 984.2,369.5 995.8,369.5" fill="#4d6478"/>
+<rect x="44" y="398" width="330" height="148" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="62" y="415" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">6  STM32：执行程序</text>
+<text x="62" y="459" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">Flash 保存固件，RAM 保存变量</text>
+<text x="62" y="490" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">PC13 控制用户 LED</text>
+<rect x="436" y="398" width="330" height="148" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="454" y="415" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">5  ST-LINK：硬件桥梁</text>
+<text x="454" y="459" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">电脑侧 USB，芯片侧 SWD</text>
+<text x="454" y="490" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">负责传递下载和调试指令</text>
+<rect x="828" y="398" width="328" height="148" rx="14" fill="#e9f6ef" stroke="#218461" stroke-width="2"/>
+<text x="846" y="415" fill="#218461" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">4  OpenOCD：控制目标</text>
+<text x="846" y="459" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">写 Flash · 校验 · 复位</text>
+<text x="846" y="490" fill="#122c47" font-size="20" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">提供 GDB 调试服务</text>
+<line x1="822" y1="470" x2="778" y2="470" stroke="#4d6478" stroke-width="3"/>
+<polygon points="778.0,470.0 788.5,464.2 788.5,475.8" fill="#4d6478"/>
+<line x1="428" y1="470" x2="384" y2="470" stroke="#4d6478" stroke-width="3"/>
+<polygon points="384.0,470.0 394.5,464.2 394.5,475.8" fill="#4d6478"/>
+<rect x="44" y="593" width="1112" height="95" rx="14" fill="white" stroke="none" stroke-width="2"/>
+<text x="66" y="610" fill="#7153b5" font-size="25" font-weight="700" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">按 F5 时：Cortex-Debug → GDB → OpenOCD → ST-LINK → STM32</text>
+<text x="66" y="650" fill="#122c47" font-size="21" font-weight="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="start" dominant-baseline="text-before-edge">断点、单步和变量信息通过同一条链路返回 VS Code。</text>
+</svg>

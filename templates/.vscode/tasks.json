@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "STM32: Configure",
+      "type": "process",
+      "command": "cmake",
+      "args": ["--preset", "tutorial-debug"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "STM32: Build",
+      "type": "process",
+      "command": "cmake",
+      "args": ["--build", "--preset", "tutorial-debug", "--parallel"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "dependsOn": "STM32: Configure",
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "STM32: Flash",
+      "type": "process",
+      "command": "openocd",
+      "args": [
+        "-f", "${workspaceFolder}/openocd.cfg",
+        "-c",
+        "program {${workspaceFolder}/build/Debug/STM32_Blink.elf} verify reset exit"
+      ],
+      "options": {"cwd": "${workspaceFolder}"},
+      "dependsOn": "STM32: Build",
+      "problemMatcher": []
+    }
+  ]
+}
